@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<title>Document</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel='stylesheet' href='./style.css'>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <!-- Header -->
+        <h1 class="display-3 text-center mb-3 app-title">
+          What's the Temperature?
+          <span id="temp" class="fa"></span>
+        </h1>
+        <!-- end of Header -->
+        <!-- Number input for Farenheits -->
+        <div class="input-group input-group-lg">
+          <label for="farInput" class="sr-only">Enter degrees in Farenheit </label>
+          <input type="number"
+                 id="farInput"
+                 class="form-control"
+                 placeholder="Enter number">
+          <div class="input-group-addon starter">&deg;F</div>
+          <div class="input-group-addon result-a"><span id="farToCel"></span> &deg;C</div>
+          <div class="input-group-addon result-b"><span id="farToKel"></span> &deg;K</div>
+        </div>
+        <!-- Input number in Celsius to convert -->
+        <div class="input-group input-group-lg">
+          <label class="sr-only" for="celInput">Enter degrees in Celsius</label>
+          <input id="celInput" type="number" class="form-control" placeholder="Enter number">
+          <div class="input-group-addon starter">&deg;C</div>
+          <div class="input-group-addon result-a"><span id="celToFar"></span> &deg;F</div>
+          <div class="input-group-addon result-b"><span id="celToKel"></span> &deg;K</div>
+        </div>
+        <!-- Input number in Kelvins to convert -->
+        <div class="input-group input-group-lg">
+          <label class="sr-only" for="kelInput">Enter degrees in Kelvin</label>
+          <input id="kelInput" type="number" class="form-control" placeholder="Enter number">
+          <div class="input-group-addon starter">&deg;K</div>
+          <div class="input-group-addon result-a"><span id="kelToFar"></span> &deg;F</div>
+          <div class="input-group-addon result-b"><span id="kelToCel"></span> &deg;C</div>
+        </div>
+      </div>
+    </div>
+  </div>
+<script src='./main.js'></script>
+</body>
+</html>
